@@ -1,0 +1,25 @@
+{
+  "name": "stytch-auth",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^16.4.4",
+    "express": "^4.18.2",
+    "express-session": "^1.18.0",
+    "passport": "^0.7.0",
+    "passport-custom": "^1.1.1",
+    "passport-strategy": "^1.0.0",
+    "stytch": "^10.5.0"
+  },
+  "devDependencies": {
+    "@types/passport-strategy": "^0.2.38",
+    "env-mirror": "^1.0.2"
+  }
+}
