@@ -25,7 +25,7 @@ router.get("/authenticate", async (req, res) => {
 
 router.get(
   "/user-data",
-  passport.authenticate("stytch-strategy"),
+  passport.authenticate("passport-stytch"),
   async (req, res) => {
     const userId = req.user.session.user_id;
 

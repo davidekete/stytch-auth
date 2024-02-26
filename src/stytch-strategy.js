@@ -3,7 +3,7 @@ const { authenticateSessionJWT } = require("./stytch-auth");
 const CustomStrategy = passportCustom.Strategy;
 
 
-const StytchStrategy = new CustomStrategy(async function (req, done) {
+const PassportStytch = new CustomStrategy(async function (req, done) {
   try {
     //try to retrieve sessionToken from the session object
     const sessionJWT =
@@ -26,4 +26,4 @@ const StytchStrategy = new CustomStrategy(async function (req, done) {
   }
 });
 
-module.exports = StytchStrategy;
+module.exports = PassportStytch;

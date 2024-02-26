@@ -6,7 +6,7 @@ const expressSession = require("express-session");
 const authRouter = require("./src/authRoutes");
 const passport = require("passport");
 const cookieParser = require("cookie-parser");
-const StytchStrategy = require("./src/stytch-strategy");
+const PassportStytch = require("./src/stytch-strategy");
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
@@ -23,7 +23,7 @@ app.use(
 );
 
 // Define the Stytch strategy
-passport.use("passport-stytch", StytchStrategy);
+passport.use("passport-stytch", PassportStytch);
 
 // Initialize passport
 app.use(passport.initialize());
