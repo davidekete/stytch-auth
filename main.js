@@ -23,7 +23,7 @@ app.use(
 );
 
 // Define the Stytch strategy
-passport.use("stytch-strategy", StytchStrategy);
+passport.use("passport-stytch", StytchStrategy);
 
 // Initialize passport
 app.use(passport.initialize());
