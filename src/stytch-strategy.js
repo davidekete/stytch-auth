@@ -1,6 +1,6 @@
 const passportCustom = require("passport-custom");
-const CustomStrategy = passportCustom.Strategy;
 const { authenticateSessionJWT } = require("./stytch-auth");
+const CustomStrategy = passportCustom.Strategy;
 
 
 const StytchStrategy = new CustomStrategy(async function (req, done) {
